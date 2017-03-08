@@ -8,7 +8,8 @@
 		<link rel="icon" href="img/favicon.png" />
 		<!-- GOOGLE FONTS
 			========================================================================= -->
-		<link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
+		<!-- <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet"> -->
+		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
 		<!-- STYLESHEETS
 			========================================================================= -->
 		<link rel='stylesheet' href='css/bootstrap.css' type='text/css' />
@@ -21,6 +22,9 @@
 		<link rel='stylesheet' href='css/animate.css' type='text/css' />
 		<link rel='stylesheet' href='css/fx.css' type='text/css' />
 		<link rel='stylesheet' href='css/style.css' type='text/css' />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+		<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.light_green-green.min.css" />
 	</head>
 	<body id="home">
 		<!-- PRELOADER STARTS
@@ -32,20 +36,20 @@
 			<!-- HEADER STARTS
 				========================================================================= -->
 			<header id="masthead" class="masthead-corporate site-header  clearfix" role="banner">
-			<!--<div id="top" class="clearfix dark">
+			<div id="top" class="clearfix dark">
 					<div class="container">
 						<div class="site-info">
-							<p><i class="fa"></i>+123-456-7890</p>
+							<p><i class="fa fa-phone"></i>+123-456-7890</p>
 						</div>
 						<div class="site-info address">
-							<p><i class="fa"></i>CSI America , 5615 NW 45th Lane, Gainesville, FL 32606 - United States</p>
+							<p><i class="fa fa-map-marker"></i>CSI America , 5615 NW 45th Lane, Gainesville, FL 32606 - United States</p>
 						</div>
-						<div class="social-media">
+						<div style="float:right;margin-top:5px;" class="addthis_inline_follow_toolbox" >
 						</div>
 					</div> 
-				</div>-->
+				</div>
 				<div id="menu" class="clearfix dark menu-class">
-					<div class="container">
+					<div class="container" style="float:right;">
 						<div id="logo">
 							<a href="index.html" rel="home">
 								<img height="70" width="250" style="margin-top:-15px;" src="img/csi_logo.png" alt="Consulting" />
@@ -54,14 +58,13 @@
 						<div id="button-menu" class="button-icon">
 							<a href="#mobile-navigation"><i class="fa fa-bars"></i></a>
 						</div>
-						<nav id="site-navigation" class="main-navigation" role="navigation">
+						<nav id="site-navigation" style="float:right;" class="main-navigation" role="navigation">
 							<ul id="primary-menu" class="light">
 								<li><a href="#home">About Us</a></li>
 								<li><a href="#intro">Services</a></li>
 								<li><a href="#selection">Selection</a></li>
 								<li><a href="#strategicStaffing">Strategic Staffing</a></li>
 								<li><a href="#contact-us">Contact Us</a></li>
-								<li class="socialicons"><div class="addthis_inline_follow_toolbox" style="margin:-40px -40px -40px 0;"></div></li>
 							</ul>
 						</nav>
 					</div>
@@ -89,9 +92,10 @@
 								<span>Our Mission</span>
 							</h2>
 							<p class="fx-start" data-animation="fadeInUp">
-								<span style="font-size: 1.5em;">is to provide excellent customer service. Since 1998, organizations all across the Americas have trusted CSI America for solutions to their IT and business management problems.</span>
+								<span style="font-size: 1.5em;">is to provide excellent customer service.<br> Since 1998, organizations all across the Americas have trusted CSI America for solutions to their IT and business management problems.</span>
 							</p>
-							<a class="button-big button-dark fx-start black" href="#" data-animation="fadeInDown"><i class="material-icons" style="vertical-align: middle;font-size: 25px;">email</i>Contact Us</a>
+							<!-- <a class="button-big button-dark fx-start black" href="#" data-animation="fadeInDown"><i class="material-icons" style="vertical-align: middle;font-size: 25px;">email</i>Contact Us</a>-->
+							<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"><i class="material-icons" style="vertical-align: middle;font-size: 25px;">email</i>Contact Us</button>
 						</div>
 					</div>
 					<div class="item slide2">

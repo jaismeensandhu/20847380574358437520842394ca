@@ -470,7 +470,7 @@ a {
 	border: 1px solid #000000;
 }
 #top {
-	height: 48px;
+	height: 42px;
 }
 #top .site-info {
 	float: left;
@@ -577,6 +577,9 @@ a {
 #site-navigation {
 	float: right;
 }
+#site-navigation ul {
+	float: right;
+}
 #primary-menu {
 	margin-bottom: 0;
 	font-weight: 600;
@@ -589,13 +592,16 @@ a {
 #primary-menu li a {
 	display: inline-block;
 	padding: 30px 10px;
-	font-size: 14px;
+	font-size: 15px;
 	font-weight: 700;
 	letter-spacing: 1px;
 	text-transform: uppercase;
 	position: relative;
 	display: inline-block;
 	cursor: pointer;
+}
+#primary-menu li div a {
+	padding: 30px 2px;
 }
 
 #primary-menu  li a:hover {
@@ -622,7 +628,7 @@ a {
 	font-size: 15px;
 	letter-spacing: 0;
 	text-transform: none;
-	color: #001A64;
+	color: #000000;
 }
 #primary-menu .sub-menu li a:hover {
 	text-decoration: none;
@@ -767,12 +773,12 @@ a {
 	padding: 12px 15px;
 	color: #ffffff;
 	font-size: 16px;
-	max-width: 520px;
+	max-width: 760px;
 }
 #slider-main .carousel-caption .button-big {
 	margin: 20px 20px 0 0;
 	border-radius: 5px;
-	background: #002dad;
+	background: #000;
 }
 
 #slider-main .carousel-indicators {
@@ -860,7 +866,7 @@ a {
 #slider-main .slider-next i {
 	font-size: 22px;
 	padding-top: 15px;
-	color: #001a64;
+	color: #000;
 }
 /* SLIDER ENDS
 ========================================================================= */
@@ -877,7 +883,7 @@ a {
 	padding: 5px 0px 5px 0px;
 }
 .icon .h4 {
-	color: #2e2e2e;
+	color: #000;
 	font-size: 18px;
 	font-weight: 600;
 	margin: 0px 10px 10px 10px;
@@ -888,7 +894,7 @@ a {
 .h1.fa {
 	font-size: 30px;
 	margin: 15px;
-	color: #2e2e2e;
+	color: #000;
 }
 .h1 small {
 	color: #000000;
@@ -897,7 +903,7 @@ a {
 .icon:hover .h4,
 .icon:hover .h1.fa,
 .icon:hover .glyphicons {
-	color: #002796;
+	color: #000;
 	-webkit-animation-name: rubberBand;
 	animation-name: rubberBand;
 }
@@ -909,7 +915,7 @@ a {
 }
 .hidden-content-wrapper {
 	background: #d8d8d8;
-	color: #002796;
+	color: #000;
 	position: relative;
 	top: 0px;
 }
@@ -979,7 +985,7 @@ blockquote {
 	margin: 0;
 	border: none;
 	font-size: 16px;
-	color: #001A64;
+	color: #000;
 }
 .user-reviews blockquote figure {
 	margin-bottom: 2.25em;
@@ -990,7 +996,7 @@ blockquote {
 }
 .user-reviews blockquote p {
 	font-size: 22px;
-	color: #001A64;
+	color: #000;
 	margin-bottom: 24px;
 }
 blockquote footer::before {
@@ -998,7 +1004,7 @@ blockquote footer::before {
 }
 blockquote footer {
 	font-size: 100%;
-	color: #001A64;
+	color: #000;
 }
 
 blockquote cite {
@@ -1088,21 +1094,21 @@ blockquote cite i {
 .box:hover {
 	background: #FFFFFF;
 	box-shadow: 0px 0px 3px #AAA;
-	border-left: 3px solid #002796;
-	border-right: 3px solid #002796;
+	border-left: 3px solid #000;
+	border-right: 3px solid #000;
 }
 .box:hover h3 {
 	position: relative;
 	margin-top: -26px;
 	margin-left: -30px;
 	margin-bottom: 26px;
-	color: #002796;
+	color: #000;
 }
 .box:hover .fa {
     position: relative;
     margin-top: -26px;
     margin-right: 20px;
-	color: #002796;
+	color: #000;
 }
 /* TESTIMONIALS ENDS
 ========================================================================= */
@@ -2986,7 +2992,7 @@ button[type=submit] {
 	background-color: #f1f1f1;
 }
 #top {
-	background-color: #001964;
+	background-color: #000;
 }
 #masthead  {
 	background-color: #ffffff;
@@ -3105,17 +3111,17 @@ button.input-icon,
 #secondary .widget-head h3,
 .quote,
 .border-color-main {
-	border-color: #001A64;
+	border-color: #000;
 }
 .tabs .nav-tabs li.active,
 .box-center,
 .box-left,
 .border-color-main {
-	border-top-color: #001A64;
+	border-top-color: #000;
 }
 .icon-sub,
 .background-color-main {
-	background-color: #001A64;
+	background-color: #000;
 }
 h1,
 h2,
@@ -3321,7 +3327,7 @@ a.label-main:hover,
 .sub-menu > .current_page_item > a,
 .sub-menu > .current-menu-item > a,
 .selection-invert {
-    color: #001a64 !important;
+    color: #000 !important;
     background-color: #dddddd !important;
 	-webkit-transition: background-color 0.2s linear;
 	-moz-transition:background-color 0.2s linear;
@@ -3329,14 +3335,14 @@ a.label-main:hover,
 	transition: background-color 0.2s linear;
 }
 #primary-menu>li>a {
-	color: #001A64 !important;
+	color: #000 !important;
 }
 ::selection {
-	background-color: #001A64;
+	background-color: #000;
 	color: #ffffff;
 }
 ::-moz-selection {
-	background-color: #001A64;
+	background-color: #000;
 	color: #464646;
 }
 #branding {
@@ -3358,7 +3364,7 @@ a.label-main:hover,
 }
 #slider-main .carousel-caption h2 span,
 #slider-main .carousel-caption p span  {
-	color: #00134b;
+	color: #000;
 	background: transparent;
 }
 #slider-main .carousel-caption p span  {
