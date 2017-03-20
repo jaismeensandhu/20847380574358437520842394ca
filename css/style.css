@@ -129,6 +129,7 @@ q:after {
 	content: '';
 	content: none;
 }
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
@@ -263,6 +264,10 @@ a {
 }
 #content {
 	min-height: 600px;
+	position: relative;
+	z-index: 1000;
+}
+#contentaboutus {
 	position: relative;
 	z-index: 1000;
 }
@@ -472,6 +477,9 @@ a {
 #top {
 	height: 42px;
 }
+#top p{
+	color:#000;
+}
 #top .site-info {
 	float: left;
 	padding-top: 15px;
@@ -496,7 +504,7 @@ a {
 	margin: 8px 0 0 4px;
 	text-align: center;
 	border-radius: 99px;
-	border: 1px solid #000000;
+	border: 1px solid #000;
 }
 #top .social-media a i {
 	font-size: 16px;
@@ -527,6 +535,7 @@ a {
 }
 #menu .container {
 	min-height: 80px;
+	background-color:#00074F;
 }
 .stuck #menu .container {
 	min-height: 70px;
@@ -696,7 +705,10 @@ a {
 	width: 100%;
 	-webkit-animation: slideInDown 1s both;
     animation: slideInDown 1s both;
-	background: #FFFFFF;
+	background-color: #fff;
+}
+.menu-class{
+	background-color: #00074F;
 }
 .fa.fa-search.search {
 	padding: 5px 10px;
@@ -712,22 +724,24 @@ a {
 ========================================================================= */
 .slide1 {
 	background-image:url(../img/slider_01.jpg);
+	
 }
 .slide2 {
-	background-image:url(../img/slider_02.jpg);
+	background-image:url(../img/slider_0222.png);
+	
 }
 
 #slider-main {
 	width: 100%;
 	background-size: cover;
 	z-index: 0;
-	height: 560px;
+	height: 460px;
 }
 #slider-main .carousel-inner {
 	overflow: hidden;
 }
 #slider-main .carousel-inner .item {
-	min-height: 530px;
+	min-height: 460px;
 	background-size: cover;
 }
 #slider-main .picture {
@@ -748,7 +762,7 @@ a {
 	display: block;
 	padding: 0 40px;
 	text-shadow: none;
-	top: 200px;
+	/*top: 200px;*/
 	max-width: 1280px;
 	width: 1280px;
 	left: 10px;
@@ -841,30 +855,27 @@ a {
 }
 #slider-main .slider-prev {
 	z-index: 9000;
-	top: 150px;
+	top: 10%;
 	left: 30px;
 	margin-top: 100px
 }
 #slider-main .slider-next {
 	z-index: 9000;
-	top: 150px;
+	top: 10%;
 	right: 30px;
 	margin-top: 100px
 }
 #slider-main .slider-prev,
 #slider-main .slider-next {
-    background: #ffffff;
     position: absolute;
-    box-shadow: 0px 0px 3px #000;
 	text-align: center;
 	width: 48px;
 	height: 48px;
 	opacity: 1;
-	border-radius: 50%;
 }
 #slider-main .slider-prev i,
 #slider-main .slider-next i {
-	font-size: 22px;
+	font-size: 30px;
 	padding-top: 15px;
 	color: #000;
 }
@@ -1068,7 +1079,7 @@ blockquote cite i {
 	display: inline-block;
 	font-weight: 600;
 	color: #000000;
-	border-left: 10px solid #000000;
+	/* border-left: 10px solid #000000;*/
 	padding: 0px 10px;
 	margin: 0px 0px 20px 0px;
 }
@@ -1297,9 +1308,7 @@ blockquote cite i {
 	font-size: 20px;
 	padding: 10px;
 }
-.btn.white: active {
-	color: #002DAD !important;
-}
+
 /* CONTACT-US ENDS
 ========================================================================= */
 /* 7. FOOTER STARTS
@@ -2499,19 +2508,10 @@ button[type=submit] {
 	font-weight: 400;
 }
 .site-info i {
-	color: #FFF;
+	color: #000;
 	font-size: 18px;
 	margin-right: 5px;
 }
-.site-info.address p{
-	font-weight: 400;
-}
-.site-info i {
-	color: #FFF;
-	font-size: 18px;
-	margin-right: 5px;
-}
-
 
 .blog-standard {
 	margin-bottom: 40px;
@@ -2827,7 +2827,7 @@ button[type=submit] {
 .feature-list h3 {
 	font-size: 18px;
 	font-weight: 600;
-	margin: 0 0 20px 0;
+	margin: -10px 0 20px 0;
 	padding-top: 4px;
 	font-weight: 600;
 }
@@ -2992,7 +2992,7 @@ button[type=submit] {
 	background-color: #f1f1f1;
 }
 #top {
-	background-color: #000;
+	background-color: #DDDDDD;
 }
 #masthead  {
 	background-color: #ffffff;
@@ -3335,7 +3335,7 @@ a.label-main:hover,
 	transition: background-color 0.2s linear;
 }
 #primary-menu>li>a {
-	color: #000 !important;
+	color: #ddd !important;
 }
 ::selection {
 	background-color: #000;
@@ -3458,10 +3458,10 @@ form {
 ========================================================================= */
 @media (min-width: 1280px) {
 	#slider-main {
-		height: 530px;
+		height: 460px;
 	}
 	#slider-main .carousel-caption {
-		top: 170px;
+		/*top: 170px;*/
 		width: 100%;
 		height: auto;
 		padding: 0 40px;
@@ -3499,10 +3499,10 @@ form {
 		padding-right: 0 !important;
 	}
 	#slider-main {
-		height: 500px;
+		height: 460px;
 	}
 	#slider-main .carousel-caption {
-		top: 90px;
+		/*top: 90px;*/
 		width: 100%;
 		height: auto;
 		padding: 0 120px;
@@ -3530,7 +3530,7 @@ form {
 		height: 500px;
 	}
 	#slider-main .carousel-caption {
-		top: 60px;
+		/*top: 60px;*/
 		width: 100%;
 		height: auto;
 		padding: 0 80px;
@@ -3688,22 +3688,34 @@ form {
 	}
 	#slider-main .carousel-caption {
 		width: 100%;
-		top: 40px;
+		/*top: 40px;*/
 		padding-left: 40px;
 		padding-right: 40px;
 	}
 	#slider-main .slider-prev {
-		top: 50%;
-		left: 20px;
-		right: 20px;
+		top: 30%;
+		left: 12px;
+		right: 12px;
 		margin-top: 0;
 		margin-right: 500px;
 	}
 	#slider-main .slider-next {
-		top: 50%;
-		right: 20px;
+		top: 30%;
+		right: 12px;
 		margin-top: 0;
 	}
+	#slider-main .slider-prev,
+#slider-main .slider-next {
+    box-shadow: 0px 0px 3px #000;
+	text-align: center;
+	width: 36px;
+	height: 36px;
+}
+#slider-main .slider-prev i,
+#slider-main .slider-next i {
+	font-size: 17px;
+	padding-top: 10px;
+}
 	#slider-main .carousel-caption h2 span {
 		font-size: 18px;
 	}
@@ -3758,7 +3770,7 @@ form {
 @media (max-width: 479px) {
 	#slider-main .carousel-caption {
 		width: 100%;
-		top: 25px;
+		/*top: 25px;*/
 		padding-left: 20px;
 		padding-right: 20px;
 	}
@@ -3892,4 +3904,10 @@ form {
 	}
 }
 /* RESPONSIVE ENDS
+========================================================================= */
+/* ABOUT-US STARTS
+========================================================================= */
+
+
+/* ABOUT-US ENDS
 ========================================================================= */
